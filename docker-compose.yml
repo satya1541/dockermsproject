@@ -6,29 +6,21 @@ services:
       - "81:80"
     deploy:
       replicas: 3
-    volumes:
-      - "movies"
   train:
     image: satya1541/train:latest
     ports:
       - "82:80"
     deploy:
       replicas: 3
-    volumes:
-      - "train"
   dth:
     image: satya1541/dth:latest
     ports:
       - "83:80"
     deploy:
       replicas: 3
-    volumes:
-      - "dth"
   recharge:
     image: satya1541/recharge:latest
     ports:
       - "84:80"
     deploy:
       replicas: 3
-    volumes:
-      - "recharge"

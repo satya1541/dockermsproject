@@ -10,7 +10,6 @@ CMD ["/usr/sbin/apachectl", "-D", "FOREGROUND"]
 Inside Dockerfile (inside of cloned Project file)
 
 Give permission inside the Project File
-
 chmod -R 777 .
 
 FROM ubuntu
